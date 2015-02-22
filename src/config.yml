@@ -1,0 +1,10 @@
+regenerateConfig: false
+time: 1200
+broadcastWhenNobodyIsOnline: false
+broadcastMessagePrefix: '&6[&aFerryAnnouncer&6] &f'
+random: false
+messages:
+- 'Plz edit your FerryAnnouncer config file to remove this message'
+- 'FerryAnnouncer made by ferrybig'
+- 'Also try my multiworld plugin'
+- 'Remember: Restart/reload your server after you edited the config'

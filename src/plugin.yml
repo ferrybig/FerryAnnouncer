@@ -1,0 +1,6 @@
+name: FerryAnnouncerPlugin
+main: me.ferry.bukkit.plugins.announcer.FerryAnnouncerPlugin
+version: 1.0.0
+author: ferrybig
+description: >
+             AutoAnnouncer made by ferry
