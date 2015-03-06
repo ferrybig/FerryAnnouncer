@@ -80,7 +80,7 @@ public class FerryAnnouncerPlugin extends JavaPlugin
 
 	private void tryBroadcast(int index)
 	{
-		if (this.broadcastWhenNobodyIsOnline || (Bukkit.getOnlinePlayers().length != 0))
+		if (this.broadcastWhenNobodyIsOnline || (!Bukkit.getOnlinePlayers().isEmpty()))
 		{
 			Bukkit.broadcastMessage(this.broadcastMessagesPrefix.concat(this.broadcastMessages.get(index)).replaceAll("(&([a-f0-9]))", "§$2"));
 		}
