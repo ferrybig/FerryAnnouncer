@@ -7,6 +7,7 @@ package me.ferry.bukkit.plugins.announcer;
 import java.util.List;
 import java.util.Random;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -82,7 +83,7 @@ public class FerryAnnouncerPlugin extends JavaPlugin
 	{
 		if (this.broadcastWhenNobodyIsOnline || (!Bukkit.getOnlinePlayers().isEmpty()))
 		{
-			Bukkit.broadcastMessage(this.broadcastMessagesPrefix.concat(this.broadcastMessages.get(index)).replaceAll("(&([a-f0-9]))", "§$2"));
+			Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', this.broadcastMessagesPrefix.concat(this.broadcastMessages.get(index))));
 		}
 	}
 
